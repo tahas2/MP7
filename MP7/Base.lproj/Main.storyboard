@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MP7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2xrWoUg5IRzs3OE8DPQCm4GBbCu6FHZTbjSPJZMSbin2GNaFUlxOhzJ7qp5liky" translatesAutoresizingMaskIntoConstraints="NO" id="N9V-ZB-0oh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="BTJ-4l-Cic">
+                                <rect key="frame" x="51.5" y="37.5" width="272" height="592"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="gCa-DP-btI">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="592"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDS-th-y2I">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="57"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="37"/>
+                                                <state key="normal" title="You're fired!">
+                                                    <color key="titleColor" red="0.25723227950447108" green="0.50784473670813279" blue="0.82923540609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHW-Bq-Zub"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0j-ut-b1C">
+                                                <rect key="frame" x="0.0" y="107" width="272" height="57"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="37"/>
+                                                <state key="normal" title="Fake news!">
+                                                    <color key="titleColor" red="0.25723227950447108" green="0.50784473670813279" blue="0.82923540609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXd-30-jXd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-Q2-SYZ">
+                                                <rect key="frame" x="0.0" y="214" width="272" height="57"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="37"/>
+                                                <state key="normal" title="Build the Wall!">
+                                                    <color key="titleColor" red="0.25723227950447108" green="0.50784473670813279" blue="0.82923540609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBG-Nf-ehP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maT-8M-haU">
+                                                <rect key="frame" x="0.0" y="321" width="272" height="57"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="37"/>
+                                                <state key="normal" title="I'm really rich.">
+                                                    <color key="titleColor" red="0.25723227950447108" green="0.50784473670813279" blue="0.82923540609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ku-uN-6it"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Wa-Xwa">
+                                                <rect key="frame" x="0.0" y="428" width="272" height="57"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="37"/>
+                                                <state key="normal" title="WRONG!">
+                                                    <color key="titleColor" red="0.25723227950447108" green="0.50784473670813279" blue="0.82923540609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tyU-Tc-iUD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-g9-BKt">
+                                                <rect key="frame" x="0.0" y="535" width="272" height="57"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="37"/>
+                                                <state key="normal" title="CHINA">
+                                                    <color key="titleColor" red="0.25723227950447108" green="0.50784473670813279" blue="0.82923540609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iIo-te-eWw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="N9V-ZB-0oh" secondAttribute="trailing" constant="-16" id="1xo-Ax-HgR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="N9V-ZB-0oh" secondAttribute="bottom" id="Hdu-gm-KM6"/>
+                            <constraint firstItem="BTJ-4l-Cic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jlv-fA-V7M"/>
+                            <constraint firstItem="N9V-ZB-0oh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-20" id="Shl-w3-ZHk"/>
+                            <constraint firstItem="BTJ-4l-Cic" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mwU-0g-lT7"/>
+                            <constraint firstItem="N9V-ZB-0oh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="qc0-NJ-lPc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="45.42728635682159"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="v2xrWoUg5IRzs3OE8DPQCm4GBbCu6FHZTbjSPJZMSbin2GNaFUlxOhzJ7qp5liky" width="750" height="1334"/>
+    </resources>
 </document>

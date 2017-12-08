@@ -12,6 +12,13 @@
 		0F447D5D1FDA409700AC3884 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D5B1FDA409700AC3884 /* Main.storyboard */; };
 		0F447D5F1FDA409700AC3884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D5E1FDA409700AC3884 /* Assets.xcassets */; };
 		0F447D621FDA409700AC3884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D601FDA409700AC3884 /* LaunchScreen.storyboard */; };
+		0F447D7D1FDA42FA00AC3884 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D771FDA42FA00AC3884 /* wrong.mp3 */; };
+		0F447D7E1FDA42FA00AC3884 /* china.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D781FDA42FA00AC3884 /* china.mp3 */; };
+		0F447D7F1FDA42FA00AC3884 /* fired.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D791FDA42FA00AC3884 /* fired.mp3 */; };
+		0F447D801FDA42FA00AC3884 /* news.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D7A1FDA42FA00AC3884 /* news.mp3 */; };
+		0F447D811FDA42FA00AC3884 /* wall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D7B1FDA42FA00AC3884 /* wall.mp3 */; };
+		0F447D821FDA42FA00AC3884 /* rich.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F447D7C1FDA42FA00AC3884 /* rich.mp3 */; };
+		0F447D851FDA454800AC3884 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F447D841FDA454800AC3884 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		0F447D5E1FDA409700AC3884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F447D611FDA409700AC3884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F447D631FDA409700AC3884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F447D771FDA42FA00AC3884 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrong.mp3; path = MP7/Sounds/wrong.mp3; sourceTree = SOURCE_ROOT; };
+		0F447D781FDA42FA00AC3884 /* china.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = china.mp3; path = MP7/Sounds/china.mp3; sourceTree = SOURCE_ROOT; };
+		0F447D791FDA42FA00AC3884 /* fired.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fired.mp3; path = MP7/Sounds/fired.mp3; sourceTree = SOURCE_ROOT; };
+		0F447D7A1FDA42FA00AC3884 /* news.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = news.mp3; path = MP7/Sounds/news.mp3; sourceTree = SOURCE_ROOT; };
+		0F447D7B1FDA42FA00AC3884 /* wall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wall.mp3; path = MP7/Sounds/wall.mp3; sourceTree = SOURCE_ROOT; };
+		0F447D7C1FDA42FA00AC3884 /* rich.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = rich.mp3; path = MP7/Sounds/rich.mp3; sourceTree = SOURCE_ROOT; };
+		0F447D841FDA454800AC3884 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F447D851FDA454800AC3884 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				0F447D561FDA409700AC3884 /* MP7 */,
 				0F447D551FDA409700AC3884 /* Products */,
+				0F447D831FDA454800AC3884 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +70,7 @@
 		0F447D561FDA409700AC3884 /* MP7 */ = {
 			isa = PBXGroup;
 			children = (
+				0F447D761FDA42D200AC3884 /* TrumpSounds */,
 				0F447D571FDA409700AC3884 /* AppDelegate.swift */,
 				0F447D591FDA409700AC3884 /* ViewController.swift */,
 				0F447D5B1FDA409700AC3884 /* Main.storyboard */,
@@ -62,6 +79,28 @@
 				0F447D631FDA409700AC3884 /* Info.plist */,
 			);
 			path = MP7;
+			sourceTree = "<group>";
+		};
+		0F447D761FDA42D200AC3884 /* TrumpSounds */ = {
+			isa = PBXGroup;
+			children = (
+				0F447D781FDA42FA00AC3884 /* china.mp3 */,
+				0F447D791FDA42FA00AC3884 /* fired.mp3 */,
+				0F447D7A1FDA42FA00AC3884 /* news.mp3 */,
+				0F447D7C1FDA42FA00AC3884 /* rich.mp3 */,
+				0F447D7B1FDA42FA00AC3884 /* wall.mp3 */,
+				0F447D771FDA42FA00AC3884 /* wrong.mp3 */,
+			);
+			name = TrumpSounds;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0F447D831FDA454800AC3884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F447D841FDA454800AC3884 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +162,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F447D801FDA42FA00AC3884 /* news.mp3 in Resources */,
+				0F447D7D1FDA42FA00AC3884 /* wrong.mp3 in Resources */,
+				0F447D821FDA42FA00AC3884 /* rich.mp3 in Resources */,
+				0F447D7E1FDA42FA00AC3884 /* china.mp3 in Resources */,
 				0F447D621FDA409700AC3884 /* LaunchScreen.storyboard in Resources */,
+				0F447D7F1FDA42FA00AC3884 /* fired.mp3 in Resources */,
 				0F447D5F1FDA409700AC3884 /* Assets.xcassets in Resources */,
+				0F447D811FDA42FA00AC3884 /* wall.mp3 in Resources */,
 				0F447D5D1FDA409700AC3884 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
